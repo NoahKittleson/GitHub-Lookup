@@ -8,6 +8,7 @@ var displayInfo = function(username, profileData, pageNo) {
 $(document).ready(function(){
   $(".userSearch").submit(function(event) {
     event.preventDefault();
+    $(".navArrows").show();
     var username = $("#username").val();
     gitUser(username, displayInfo, 1);
   });
