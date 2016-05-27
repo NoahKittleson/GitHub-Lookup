@@ -22,5 +22,9 @@ exports.gitUser = function gitUser(username, displayFunction, page) {
   $("#more").unbind();
   $("#more").click(function() {
     gitUser(username, displayFunction, page+1);
-  })
+  });
+  $("#less").unbind();
+  $("#less").click(function() {
+    gitUser(username, displayFunction, page-1);
+  });
 }
