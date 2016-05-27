@@ -6,11 +6,12 @@ exports.gitUser = function(username, displayFunction) {
     displayFunction(username, response.length);
 
     response.forEach(function(repo) {
-      $('.showProfile').append("<h3>" + repo.name + "</h3>");
-      $('.showProfile').append("<p>Description: " + repo.description + "</p>");
-      $('.showProfile').append("<p>Language: " + repo.language + "</p>");
-      $('.showProfile').append("<p>Size: " + repo.size + "</p>");
-      $('.showProfile').append("<hr>");
+      $('.showProfile').append("<h3>" + repo.name + "</h3>" +
+                               "<div class='container'>" +
+                               "<p>Description: " + repo.description + "</p>" +
+                               "<p>Language: " + repo.language + "</p>" +
+                               "<p>Size: " + repo.size + "</p>" +
+                               "</div><hr>");
     });
 
 
