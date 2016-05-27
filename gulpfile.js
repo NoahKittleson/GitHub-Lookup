@@ -83,7 +83,7 @@ gulp.task('bower', ['bowerJS', 'bowerCSS']);
 
 //browserify --------------------------------
 gulp.task('jsBrowserify', ["concatBrowser"], function() {
-  return browserify({ entries: ['./js/browser.js'] })
+  return browserify({ entries: ['./js/browser-interface.js'] })
     .bundle()
     .pipe(source('app.js'))
     .pipe(gulp.dest('./build/js'));
@@ -91,7 +91,7 @@ gulp.task('jsBrowserify', ["concatBrowser"], function() {
 
 //concat-----------------------------------
 gulp.task('concatBrowser', function() {
-  return gulp.src(['./js/browser.js'])
+  return gulp.src(['./js/browser-interface.js'])
     .pipe(concat('allConcat.js'))
     .pipe(gulp.dest('./tmp'));
 });

@@ -1,7 +1,7 @@
 var apiKey = require('./../.env').apiKey;
 
 exports.gitUser = function(username, displayFunction) {
-  $.get('http://api.github.com/users/' + username  + '/repos?page=1&per_page=100?access_token=' + apiKey).then(function(response)  {
+  $.get('http://api.github.com/users/' + username  + '/repos?page=1&per_page=100&access_token=' + apiKey).then(function(response)  {
     console.log(response);
     displayFunction(username, response.length);
 
