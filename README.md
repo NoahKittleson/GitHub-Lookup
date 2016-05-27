@@ -14,7 +14,11 @@ This should install all node dependencies, including those for bower and gulp, a
 * `gulp build`
 * `gulp serve`
 
-and that should open up the webpage for you.  However, note that I have not provided the API key needed to use this program.  If you have your own key you can make a .env file in the head of the project directory and title with the code `exports.apiKey = "YOUR_API_KEY_HERE";`.
+and that should open up the webpage for you.  However, note that I have not provided the API key needed to use this program.  If you have your own key you can make a .env file in the head of the project directory and title with the code
+
+```javascript
+exports.apiKey = "YOUR_API_KEY_HERE";
+```
 
 ##**Technologies Used**
 * CSS
