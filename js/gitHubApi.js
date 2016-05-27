@@ -18,7 +18,3 @@ exports.gitUser = function(username, displayFunction) {
     $('.showProfile').text(error.responseJSON.message);
   });
 }
-//
-// exports.GitHubApiClass = function () {
-//
-// }
